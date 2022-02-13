@@ -10,5 +10,9 @@ fetch("https://corona.lmao.ninja/v2/countries/Brazil")
         document.getElementById("cases-tests").innerHTML = data.tests;
         document.getElementById("cases-recovered").innerHTML = data.recovered;
     })
-        
-        
+
+
+    function setTopo(){
+    $(window).scrollTop(0);
+}
+$(window).bind('scroll', setTopo);
